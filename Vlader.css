@@ -1,0 +1,55 @@
+
+:root{
+    --primary-text-color: #2196F3;
+    --secondary-color: white;
+    --color-text-black: black;
+
+}
+.button-primary{
+color: var(--secondary-color);
+background-color:var(--primary-text-color);
+}
+.button-primary:hover{
+    color: var(--color-text-black);
+    background-color: var(--secondary-color);
+}
+.nav-current-studia{
+    color: var(--primary-text-color);
+}
+
+.nav-current-studia:hover{
+    color:var(--color-text-black);
+}
+.nav-contact:hover{
+    color:var(--color-text-black);
+}
+.nav-portfolio{
+    color: var(--color-text-black);
+}
+.nav-portfolio:hover{
+    color:var(--primary-text-color);
+}
+.nav-contact{
+    color: var(--color-text-black);
+}
+.nav-contact:hover{
+    color: var(--primary-text-color);
+}
+.logo-text-primary{
+    color: var(--color-text-black);
+}
+.logo-text-primary:hover{
+    color: var(--primary-text-color);
+}
+.address-text:hover{
+    color: var(--primary-text-color);
+}
+.address-text{
+    color: var(--color-text-black);
+}
+.address-number:hover{
+    color: var(--primary-text-color)
+}
+.address-number{
+    color: var(--color-text-black);
+}
