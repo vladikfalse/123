@@ -3,7 +3,11 @@
     --primary-text-color: #2196F3;
     --secondary-color: white;
     --color-text-black: black;
+    --color-text-red:red;
 
+}
+body{
+    font-family:  'Roboto', sans-serif;
 }
 .button-primary{
 color: var(--secondary-color);
@@ -18,7 +22,7 @@ background-color:var(--primary-text-color);
 }
 
 .nav-current-studia:hover{
-    color:var(--color-text-black);
+    color:var(--color-text-blue);
 }
 .nav-contact:hover{
     color:var(--color-text-black);
@@ -52,4 +56,17 @@ background-color:var(--primary-text-color);
 }
 .address-number{
     color: var(--color-text-black);
+}
+
+.nav-сurrent-portfolio{
+    color: var(--primary-text-color);
+}
+.nav-сurrent-portfolio:hover{
+    color: var(--primary-text-color);
+}
+.nav-сurrent-portfolio:focus{
+    color: var(--primary-text-color);
+}
+.nav-contact-current{
+    color: var(--primary-text-color);
 }
