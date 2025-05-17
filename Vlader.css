@@ -7,7 +7,11 @@
 
 }
 body{
-    font-family:  'Roboto', sans-serif;
+   font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 400;
+  
+    
 }
 .button-primary{
 color: var(--secondary-color);
@@ -19,6 +23,7 @@ background-color:var(--primary-text-color);
 }
 .nav-current-studia{
     color: var(--primary-text-color);
+    text-decoration: none;
 }
 
 .nav-current-studia:hover{
@@ -29,18 +34,21 @@ background-color:var(--primary-text-color);
 }
 .nav-portfolio{
     color: var(--color-text-black);
+    text-decoration: none;
 }
 .nav-portfolio:hover{
     color:var(--primary-text-color);
 }
 .nav-contact{
     color: var(--color-text-black);
+    text-decoration: none;
 }
 .nav-contact:hover{
     color: var(--primary-text-color);
 }
 .logo-text-primary{
     color: var(--color-text-black);
+    text-decoration: none;
 }
 .logo-text-primary:hover{
     color: var(--primary-text-color);
@@ -57,9 +65,9 @@ background-color:var(--primary-text-color);
 .address-number{
     color: var(--color-text-black);
 }
-
 .nav-сurrent-portfolio{
     color: var(--primary-text-color);
+    text-decoration: none;  
 }
 .nav-сurrent-portfolio:hover{
     color: var(--primary-text-color);
@@ -69,4 +77,30 @@ background-color:var(--primary-text-color);
 }
 .nav-contact-current{
     color: var(--primary-text-color);
+    text-decoration: none;
+}
+.nav-studia-portfolio{
+    color: var(--color-text-black);
+    text-decoration: none;
+}
+.nav-studia-portfolio:hover{
+    color: var(--primary-text-color);  
+ }
+.nav-contact-portfolio{
+    text-decoration: none;
+}
+.nav-contact-portfolio:hover{
+    color: var(--primary-text-color);
+}
+.nav-contact-portfolio:focus{
+    color: var(--primary-text-color);
+}
+.nav-portfolio-portfolio{
+    text-decoration: none;
+}
+.address-text{
+    text-decoration: none;
+}
+.address-number{
+    text-decoration: none;
 }
