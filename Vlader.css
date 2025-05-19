@@ -11,16 +11,15 @@ body{
     font-optical-sizing: auto;
   font-weight: 400;
   
-    
+}
+.nav-list{
+   list-style-type: none;
 }
 .button-primary{
 color: var(--secondary-color);
 background-color:var(--primary-text-color);
 }
-.button-primary:hover{
-    color: var(--color-text-black);
-    background-color: var(--secondary-color);
-}
+
 .nav-current-studia{
     color: var(--primary-text-color);
     text-decoration: none;
@@ -49,6 +48,7 @@ background-color:var(--primary-text-color);
 .logo-text-primary{
     color: var(--color-text-black);
     text-decoration: none;
+    
 }
 .logo-text-primary:hover{
     color: var(--primary-text-color);
@@ -103,4 +103,13 @@ background-color:var(--primary-text-color);
 }
 .address-number{
     text-decoration: none;
+}
+.button-primary{
+    padding: 10px 20px;
+    background-color: #2196F3;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
 }
