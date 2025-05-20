@@ -111,8 +111,17 @@ background-color:var(--primary-text-color);
     text-decoration: none;
    text-align: center;
     display: inline-block;
+    border: 1px solid black
 }
 .container{
     width: 1200px;
     margin: 0 auto;
+    
+   
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
