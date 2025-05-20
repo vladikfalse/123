@@ -106,10 +106,13 @@ background-color:var(--primary-text-color);
 }
 .button-primary{
     padding: 10px 20px;
-    background-color: #2196F3;
+    background-color: var(--primary-text-color);
     border-radius: 4px;
     text-decoration: none;
+   text-align: center;
+    display: inline-block;
 }
 .container{
+    width: 1200px;
     margin: 0 auto;
 }
