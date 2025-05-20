@@ -119,9 +119,6 @@ background-color:var(--primary-text-color);
     
    
 }
-
-html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.list{
+    align-content: center;
 }
