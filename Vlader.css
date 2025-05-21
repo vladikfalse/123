@@ -16,10 +16,6 @@ body {
     margin: 0 auto;
 }
 
-.nav-list {
-    list-style-type: none;
-}
-
 /* Кнопка */
 .button-primary {
     color: var(--secondary-color);
@@ -81,8 +77,27 @@ body {
 .nav-contact-portfolio:focus {
     color: var(--primary-text-color);
 }
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+.nav-list .iteam{
+    display: block;
+    margin-right: 20px;
+}
+.nav-list .iteam:last-child {
+    margin-right: 0px;
+}
+ 
 .hero-section {
     text-align: center;
     padding: 60px 0;
-    margin-bottom: 30px;
+   margin: 0;
+}
+.address {
+    display: flex;
+}
+.address .address-text{
+    margin-right: 20px;
 }
