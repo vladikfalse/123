@@ -1,124 +1,88 @@
-
-:root{
-    --primary-text-color: #2196F3;
-    --secondary-color: white;
-    --color-text-black: black;
-    --color-text-red:red;
-
+:root {
+    --primary-text-color: #2196F3;  /* Основной синий цвет */
+    --secondary-color: white;       /* Белый */
+    --color-text-black: black;      /* Чёрный */
+    --color-text-red: red;          /* Красный */
 }
-body{
-   font-family: "Roboto", sans-serif;
+
+body {
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-  font-weight: 400;
-  
-}
-.nav-list{
-   list-style-type: none;
-}
-.button-primary{
-color: var(--secondary-color);
-background-color:var(--primary-text-color);
+    font-weight: 400;
 }
 
-.nav-current-studia{
-    color: var(--primary-text-color);
-    text-decoration: none;
-}
-
-.nav-current-studia:hover{
-    color:var(--color-text-blue);
-}
-.nav-contact:hover{
-    color:var(--color-text-black);
-}
-.nav-portfolio{
-    color: var(--color-text-black);
-    text-decoration: none;
-}
-.nav-portfolio:hover{
-    color:var(--primary-text-color);
-}
-.nav-contact{
-    color: var(--color-text-black);
-    text-decoration: none;
-}
-.nav-contact:hover{
-    color: var(--primary-text-color);
-}
-.logo-text-primary{
-    color: var(--color-text-black);
-    text-decoration: none;
-    
-}
-.logo-text-primary:hover{
-    color: var(--primary-text-color);
-}
-.address-text:hover{
-    color: var(--primary-text-color);
-}
-.address-text{
-    color: var(--color-text-black);
-}
-.address-number:hover{
-    color: var(--primary-text-color)
-}
-.address-number{
-    color: var(--color-text-black);
-}
-.nav-сurrent-portfolio{
-    color: var(--primary-text-color);
-    text-decoration: none;  
-}
-.nav-сurrent-portfolio:hover{
-    color: var(--primary-text-color);
-}
-.nav-сurrent-portfolio:focus{
-    color: var(--primary-text-color);
-}
-.nav-contact-current{
-    color: var(--primary-text-color);
-    text-decoration: none;
-}
-.nav-studia-portfolio{
-    color: var(--color-text-black);
-    text-decoration: none;
-}
-.nav-studia-portfolio:hover{
-    color: var(--primary-text-color);  
- }
-.nav-contact-portfolio{
-    text-decoration: none;
-}
-.nav-contact-portfolio:hover{
-    color: var(--primary-text-color);
-}
-.nav-contact-portfolio:focus{
-    color: var(--primary-text-color);
-}
-.nav-portfolio-portfolio{
-    text-decoration: none;
-}
-.address-text{
-    text-decoration: none;
-}
-.address-number{
-    text-decoration: none;
-}
-.button-primary{
-    padding: 10px 20px;
-    background-color: var(--primary-text-color);
-    border-radius: 4px;
-    text-decoration: none;
-   text-align: center;
-    display: inline-block;
-    border: 1px solid black
-}
-.container{
+.container {
     width: 1200px;
     margin: 0 auto;
-    
-   
 }
-.list{
-    align-content: center;
+
+.nav-list {
+    list-style-type: none;
+}
+
+/* Кнопка */
+.button-primary {
+    color: var(--secondary-color);
+    background-color: var(--primary-text-color);
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+/* Логотип */
+.logo-text-primary {
+    color: var(--color-text-black);
+    text-decoration: none;
+}
+.logo-text-primary:hover {
+    color: var(--primary-text-color);
+}
+
+/* Контактная информация */
+.address-text,
+.address-number {
+    color: var(--color-text-black);
+    text-decoration: none;
+}
+.address-text:hover,
+.address-number:hover {
+    color: var(--primary-text-color);
+}
+
+/* Навигация */
+.nav-current-studia,
+.nav-current-portfolio,
+.nav-contact-current {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.nav-current-studia:hover,
+.nav-current-portfolio:hover,
+.nav-current-portfolio:focus,
+.nav-contact-current:focus {
+    color: var(--primary-text-color);
+}
+
+.nav-portfolio,
+.nav-contact,
+.nav-studia-portfolio,
+.nav-contact-portfolio,
+.nav-portfolio-portfolio {
+    color: var(--color-text-black);
+    text-decoration: none;
+}
+.nav-portfolio:hover,
+.nav-studia-portfolio:hover,
+.nav-contact:hover,
+.nav-contact-portfolio:hover,
+.nav-contact-portfolio:focus {
+    color: var(--primary-text-color);
+}
+.hero-section {
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 30px;
 }
