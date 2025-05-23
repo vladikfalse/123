@@ -47,7 +47,7 @@ body {
 .address-number {
     color: var(--color-text-black);             /* Цвет текста — чёрный */
     text-decoration: none;                      /* Без подчеркивания */
-     align-items: flex-end;                     
+                     
 }
 
 .address-text:hover,
@@ -91,7 +91,8 @@ body {
 /* Список навигации */
 .nav-list {
     list-style-type: none;  /* Удаление маркеров у списка */
-    display: flex;          /* Горизонтальное размещение элементов */
+    display: flex;  
+    margin-left: 93px;        /* Горизонтальное размещение элементов */
 }
 
 .nav-list .iteam {
@@ -139,5 +140,11 @@ align-items: flex-end;
     margin-right: 29px;
 }
 .main-h3{
-    margin-left: 417px;
+    margin-top: 94px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+.address-text{
+    margin-left: 344px; 
 }
