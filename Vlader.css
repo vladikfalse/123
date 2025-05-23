@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 1600px;       /* Фиксированная ширина для контента */
+    width: 1200px;       /* Фиксированная ширина для контента */
     margin: 0 auto;      /* Центрирование контейнера по горизонтали */
 }
 
@@ -109,8 +109,15 @@ body {
 /* Главный блок с приветствием или баннером */
 .hero-section {
     text-align: center;     /* Центрирование содержимого */
-    padding: 60px 0;        /* Вертикальные отступы */
-    margin: 0;              /* Сброс внешнего отступа */
+    padding-top: 85px;
+    padding-bottom: 85px; /* Вертикальные отступы */
+    margin: 0;  
+    background-color: var(--color-footer);    
+    margin-bottom: 94px;       /* Сброс внешнего отступа */
+}
+.list{
+
+    color: var(--secondary-color);
 }
 
 /* Контейнер контактной информации */
@@ -174,7 +181,9 @@ margin-top: 50px;
     margin-bottom: 50px;
 }
 .footer-section{
-   background-color: var(--color-footer);
    padding-top: 60px;
    padding-bottom: 60px; /* Цвет фона для нижнего колонтитула */              
+}
+.footer-main{
+    background-color: var(--color-footer);
 }
