@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    width: 1200px;       /* Фиксированная ширина для контента */
+    width: 1600px;       /* Фиксированная ширина для контента */
     margin: 0 auto;      /* Центрирование контейнера по горизонтали */
 }
 
@@ -27,14 +27,15 @@ body {
     text-align: center;                         /* Выравнивание текста по центру */
     display: inline-block;                      /* Позволяет задавать размеры и отступы */
     border: 1px solid black;                    /* Чёрная рамка */
+    margin-bottom: 294px;
+    margin-top: 30px;
 }
 
 /* Стили для логотипа */
 .logo-text-primary {
     color: var(--color-text-black);             /* Цвет логотипа — чёрный */
     text-decoration: none;                      /* Без подчеркивания */
-    margin-right: 93px;                         /* Отступ справа */
-    margin-left: 215px;                         /* Отступ слева */
+                  
 }
 
 .logo-text-primary:hover {
@@ -46,6 +47,7 @@ body {
 .address-number {
     color: var(--color-text-black);             /* Цвет текста — чёрный */
     text-decoration: none;                      /* Без подчеркивания */
+     align-items: flex-end;                     
 }
 
 .address-text:hover,
@@ -94,7 +96,8 @@ body {
 
 .nav-list .iteam {
     display: block;         /* Отображение как блочный элемент */
-    margin-right: 50px;     /* Расстояние между пунктами */
+    margin-right: 50px;
+  
 }
 
 .nav-list .iteam:last-child {
@@ -111,14 +114,30 @@ body {
 /* Контейнер контактной информации */
 .address {
     display: flex;          /* Горизонтальное расположение элементов */
+align-items: flex-end;
 }
 
 .address .address-text {
-    margin-right: 20px;     /* Отступ между адресом и номером */
+    margin-right: 50px;     /* Отступ между адресом и номером */
 }
 
 /* Контейнер верхней навигации (логотип, меню, контакты) */
-.container-main-nav {
+.container .main-nav {
     display: flex;          /* Размещение элементов в одну линию */
-    align-items: center;    /* Вертикальное выравнивание по центру */
+    align-items: center; 
+  
+}
+ /* Отступ слева для текста адреса */    
+
+.main-list{
+   display: flex;
+}
+.text-decoration-none{ 
+ list-style-type: none; /* Удаление маркеров у списка */    
+}
+.text-decoration-none Features Section{
+    margin-right: 29px;
+}
+.main-h3{
+    margin-left: 417px;
 }
