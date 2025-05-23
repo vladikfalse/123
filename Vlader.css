@@ -1,103 +1,124 @@
 :root {
-    --primary-text-color: #2196F3;  /* Основной синий цвет */
-    --secondary-color: white;       /* Белый */
-    --color-text-black: black;      /* Чёрный */
-    --color-text-red: red;          /* Красный */
+    /* Цветовая палитра проекта */
+    --primary-text-color: #2196F3;  /* Основной акцентный синий цвет */
+    --secondary-color: white;       /* Вторичный цвет — белый, используется для текста на цветных кнопках */
+    --color-text-black: black;      /* Базовый цвет текста */
+    --color-text-red: red;          /* Цвет для выделения ошибок или предупреждений */
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
+    font-family: "Roboto", sans-serif;   /* Современный шрифт без засечек */
+    font-optical-sizing: auto;           /* Автоматическая настройка отображения шрифта */
+    font-weight: 400;                    /* Нормальное начертание текста */
 }
 
 .container {
-    width: 1200px;
-    margin: 0 auto;
+    width: 1200px;       /* Фиксированная ширина для контента */
+    margin: 0 auto;      /* Центрирование контейнера по горизонтали */
 }
 
-/* Кнопка */
+/* Стили для основной кнопки */
 .button-primary {
-    color: var(--secondary-color);
-    background-color: var(--primary-text-color);
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    border: 1px solid black;
+    color: var(--secondary-color);              /* Цвет текста — белый */
+    background-color: var(--primary-text-color);/* Синий фон */
+    padding: 10px 20px;                         /* Внутренние отступы */
+    border-radius: 4px;                         /* Скругление углов */
+    text-decoration: none;                      /* Удаление подчеркивания */
+    text-align: center;                         /* Выравнивание текста по центру */
+    display: inline-block;                      /* Позволяет задавать размеры и отступы */
+    border: 1px solid black;                    /* Чёрная рамка */
 }
 
-/* Логотип */
+/* Стили для логотипа */
 .logo-text-primary {
-    color: var(--color-text-black);
-    text-decoration: none;
+    color: var(--color-text-black);             /* Цвет логотипа — чёрный */
+    text-decoration: none;                      /* Без подчеркивания */
+    margin-right: 93px;                         /* Отступ справа */
+    margin-left: 215px;                         /* Отступ слева */
 }
+
 .logo-text-primary:hover {
-    color: var(--primary-text-color);
+    color: var(--primary-text-color);           /* Подсветка логотипа при наведении */
 }
 
 /* Контактная информация */
 .address-text,
 .address-number {
-    color: var(--color-text-black);
-    text-decoration: none;
-}
-.address-text:hover,
-.address-number:hover {
-    color: var(--primary-text-color);
+    color: var(--color-text-black);             /* Цвет текста — чёрный */
+    text-decoration: none;                      /* Без подчеркивания */
 }
 
-/* Навигация */
+.address-text:hover,
+.address-number:hover {
+    color: var(--primary-text-color);           /* Подсветка при наведении */
+}
+
+/* Навигация — активные ссылки */
 .nav-current-studia,
 .nav-current-portfolio,
 .nav-contact-current {
-    color: var(--primary-text-color);
+    color: var(--primary-text-color);           /* Синий цвет для текущей страницы */
     text-decoration: none;
 }
+
 .nav-current-studia:hover,
 .nav-current-portfolio:hover,
 .nav-current-portfolio:focus,
 .nav-contact-current:focus {
-    color: var(--primary-text-color);
+    color: var(--primary-text-color);           /* Подсветка при наведении или фокусе */
 }
 
+/* Навигация — обычные ссылки */
 .nav-portfolio,
 .nav-contact,
 .nav-studia-portfolio,
 .nav-contact-portfolio,
 .nav-portfolio-portfolio {
-    color: var(--color-text-black);
+    color: var(--color-text-black);             /* Стандартный цвет текста */
     text-decoration: none;
 }
+
 .nav-portfolio:hover,
 .nav-studia-portfolio:hover,
 .nav-contact:hover,
 .nav-contact-portfolio:hover,
 .nav-contact-portfolio:focus {
-    color: var(--primary-text-color);
+    color: var(--primary-text-color);           /* Подсветка при наведении */
 }
 
+/* Список навигации */
 .nav-list {
-    list-style-type: none;
-    display: flex;
+    list-style-type: none;  /* Удаление маркеров у списка */
+    display: flex;          /* Горизонтальное размещение элементов */
 }
-.nav-list .iteam{
-    display: block;
-    margin-right: 20px;
+
+.nav-list .iteam {
+    display: block;         /* Отображение как блочный элемент */
+    margin-right: 50px;     /* Расстояние между пунктами */
 }
+
 .nav-list .iteam:last-child {
-    margin-right: 0px;
+    margin-right: 0px;      /* Удаление отступа у последнего элемента */
 }
- 
+
+/* Главный блок с приветствием или баннером */
 .hero-section {
-    text-align: center;
-    padding: 60px 0;
-   margin: 0;
+    text-align: center;     /* Центрирование содержимого */
+    padding: 60px 0;        /* Вертикальные отступы */
+    margin: 0;              /* Сброс внешнего отступа */
 }
+
+/* Контейнер контактной информации */
 .address {
-    display: flex;
+    display: flex;          /* Горизонтальное расположение элементов */
 }
-.address .address-text{
-    margin-right: 20px;
+
+.address .address-text {
+    margin-right: 20px;     /* Отступ между адресом и номером */
+}
+
+/* Контейнер верхней навигации (логотип, меню, контакты) */
+.container-main-nav {
+    display: flex;          /* Размещение элементов в одну линию */
+    align-items: center;    /* Вертикальное выравнивание по центру */
 }
