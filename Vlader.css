@@ -5,6 +5,7 @@
     --color-text-black: black;      /* Базовый цвет текста */
     --color-text-red: red;  
     --color-footer: #2F303A;        /* Цвет для выделения ошибок или предупреждений */
+--color-button-white: #F5F4FA;
 }
 
 body {
@@ -37,7 +38,9 @@ body {
     color: var(--color-text-black);             /* Цвет логотипа — чёрный */
     text-decoration: none;                      /* Без подчеркивания */
 }
-
+.logo-blue{
+    color: var(--primary-text-color);
+}
 .logo-text-primary:hover {
     color: var(--primary-text-color);           /* Подсветка логотипа при наведении */
 }
@@ -203,4 +206,30 @@ logo-text-primary {
 
 .container main-nav {
     margin-left: auto;
+}
+ 
+/* Content Portfolio */
+.hero-section-portfolio {
+    text-align: center;     /* Центрирование содержимого */
+    justify-content: center;
+   
+}
+.buttonAll, .buttonWeb,
+.buttonApps, .buttonDesign,
+.buttonMarket{
+    padding: 8px 20px;
+    background-color: var(--color-button-white);
+    display: inline-block;
+    border-radius: 3px;
+    color: var(--color-text-black);
+    text-decoration: none;
+    margin-left: 8px;
+    margin-top: 95px;
+    margin-bottom: 34px;
+}
+.buttonAll:hover, .buttonWeb:hover,
+.buttonApps:hover, .buttonDesign:hover,
+.buttonMarket:hover {
+    background-color: var(--primary-text-color);
+    color: var(--secondary-color);
 }
