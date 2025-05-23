@@ -37,7 +37,9 @@ body {
     color: var(--color-text-black);             /* Цвет логотипа — чёрный */
     text-decoration: none;                      /* Без подчеркивания */
 }
-
+.logo-blue{
+    color: var(--primary-text-color);
+}
 .logo-text-primary:hover {
     color: var(--primary-text-color);           /* Подсветка логотипа при наведении */
 }
