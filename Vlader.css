@@ -3,7 +3,8 @@
     --primary-text-color: #2196F3;  /* Основной акцентный синий цвет */
     --secondary-color: white;       /* Вторичный цвет — белый, используется для текста на цветных кнопках */
     --color-text-black: black;      /* Базовый цвет текста */
-    --color-text-red: red;          /* Цвет для выделения ошибок или предупреждений */
+    --color-text-red: red;  
+    --color-footer: #2F303A;        /* Цвет для выделения ошибок или предупреждений */
 }
 
 body {
@@ -126,7 +127,8 @@ align-items: flex-end;
 .container .main-nav {
     display: flex;          /* Размещение элементов в одну линию */
     align-items: center; 
-  
+    justify-content: space-between;
+
 }
  /* Отступ слева для текста адреса */    
 
@@ -147,4 +149,32 @@ align-items: flex-end;
 }
 .address-text{
     margin-left: 344px; 
+}
+.address-number{
+    margin-right: 15px;
+}
+logo-text-primary{
+    margin-left: 15px;
+}
+.container .What-We-Do-Section{
+display: flex;
+justify-content: space-between; 
+margin-top: 50px;
+}
+.Team-Section{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 50px;
+   margin-bottom: 94px;   
+}
+
+.main-h4{
+    margin-top: 188px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.footer-section{
+   background-color: var(--color-footer);
+   padding-top: 60px;
+   padding-bottom: 60px; /* Цвет фона для нижнего колонтитула */              
 }
