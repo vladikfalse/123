@@ -36,7 +36,6 @@ body {
 .logo-text-primary {
     color: var(--color-text-black);             /* Цвет логотипа — чёрный */
     text-decoration: none;                      /* Без подчеркивания */
-                  
 }
 
 .logo-text-primary:hover {
@@ -76,7 +75,8 @@ body {
 .nav-contact,
 .nav-studia-portfolio,
 .nav-contact-portfolio,
-.nav-portfolio-portfolio {
+.nav-portfolio-portfolio,
+.nav-studia-contact {
     color: var(--color-text-black);             /* Стандартный цвет текста */
     text-decoration: none;
 }
@@ -99,7 +99,6 @@ body {
 .nav-list .iteam {
     display: block;         /* Отображение как блочный элемент */
     margin-right: 50px;
-  
 }
 
 .nav-list .iteam:last-child {
@@ -115,15 +114,16 @@ body {
     background-color: var(--color-footer);    
     margin-bottom: 94px;       /* Сброс внешнего отступа */
 }
-.list{
 
+.list {
+    text-align: center;
     color: var(--secondary-color);
 }
 
 /* Контейнер контактной информации */
 .address {
     display: flex;          /* Горизонтальное расположение элементов */
-align-items: flex-end;
+    align-items: flex-end;
 }
 
 .address .address-text {
@@ -135,55 +135,72 @@ align-items: flex-end;
     display: flex;          /* Размещение элементов в одну линию */
     align-items: center; 
     justify-content: space-between;
+}
 
+/* Отступ слева для текста адреса */    
+.main-list {
+    display: flex;
+    margin-left: 30px;
 }
- /* Отступ слева для текста адреса */    
 
-.main-list{
-   display: flex;
+.main-list-p {
+    margin-right: 30px;
 }
-.text-decoration-none{ 
- list-style-type: none; /* Удаление маркеров у списка */    
+
+.text-decoration-none { 
+    list-style-type: none; /* Удаление маркеров у списка */    
 }
-.text-decoration-none Features Section{
+
+.text-decoration-none Features Section {
     margin-right: 29px;
 }
-.main-h3{
+
+.main-h3 {
     margin-top: 94px;
     margin-bottom: 50px;
     text-align: center;
-    
 }
-.address-text{
+
+.address-text {
     margin-left: 344px; 
 }
-.address-number{
+
+.address-number {
     margin-right: 15px;
 }
-logo-text-primary{
+
+logo-text-primary {
     margin-left: 15px;
 }
-.container .What-We-Do-Section{
-display: flex;
-justify-content: space-between; 
-margin-top: 50px;
-}
-.Team-Section{
+
+.container .What-We-Do-Section {
     display: flex;
     justify-content: space-between; 
     margin-top: 50px;
-   margin-bottom: 94px;   
 }
 
-.main-h4{
+.Team-Section {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 50px;
+    margin-bottom: 94px;   
+}
+
+.main-h4 {
     margin-top: 188px;
     text-align: center;
     margin-bottom: 50px;
 }
-.footer-section{
-   padding-top: 60px;
-   padding-bottom: 60px; /* Цвет фона для нижнего колонтитула */              
+
+.footer-section {
+    padding-top: 60px;
+    padding-bottom: 60px; /* Цвет фона для нижнего колонтитула */              
 }
-.footer-main{
+
+.footer-main {
     background-color: var(--color-footer);
+}
+
+.container main-nav {
+    margin-left: auto;
 }
