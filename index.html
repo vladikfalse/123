@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="Vlader.css" />
   <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,369;1,369&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
@@ -12,21 +13,25 @@
 <body>
 
   <header class="header">
-    <div class="">
-      <nav class="container-main-nav">
+    <div class="container">
+      <nav class="container main-nav">
+        <!-- Logo -->
         <a href="./index.html" class="logo-text-primary">WebStudio</a>
+
+        <!-- Navigation menu -->
         <ul class="nav-list">
           <li class="iteam"><a href="./index.html" class="nav-current-studia">Студія</a></li>
           <li class="iteam"><a href="./index-port.html" class="nav-portfolio">Портфоліо</a></li>
           <li class="iteam"><a href="./index-contact.html" class="nav-contact">Контакти</a></li>
-          <a href="mailto:info@devstudio.com" class="address-text">info@devstudio.com</a><br />
-          <a href="tel:+380961111111" class="address-text">+38 096 111 11 11</a>
         </ul>
+
+        <!-- Contact information -->
+        <div class="address">
+          <a href="mailto:info@devstudio.com" class="address-text">info@devstudio.com</a>
+          <a href="tel:+380961111111" class="address-number">+38 096 111 11 11</a>
+        </div>
       </nav>
- </div>
- 
-        
-   
+    </div>
   </header>
 
   <main>
@@ -39,64 +44,64 @@
       </div>
     </section>
 
-    <!-- Features -->
+    <!-- Features Section -->
     <section>
       <div class="container">
-        <ul>
-          <li>
+        <ul class="main-list">
+          <li  class="text-decoration-none Features Section">
             <h2>УВАГА ДО ДЕТАЛЕЙ</h2>
             <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
           </li>
-          <li>
+          <li class="text-decoration-none Features Section">
             <h2>ПУНКТУАЛЬНІСТЬ</h2>
             <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
           </li>
-          <li>
+          <li class="text-decoration-none Features Section">
             <h2>ПЛАНУВАННЯ</h2>
             <p>Так само консультація з широким активом значною мірою зумовлює.</p>
           </li>
-          <li>
+          <li class="text-decoration-none Features Section">
             <h2>СУЧАСНІ ТЕХНОЛОГІЇ</h2>
             <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
           </li>
-        </ul>
+        </ul>   
       </div>
     </section>
 
-    <!-- What We Do -->
+    <!-- What We Do Section -->
     <section>
       <div class="container">
-        <h3>Чим ми займаємося</h3>
+        <h3 class="main-h3">Чим ми займаємося</h3>
         <ul>
-          <li><img src="Photo/box 1.png" alt="Чим ми займаємося" /></li>
-          <li><img src="Photo/box 2.png" alt="Чим ми займаємося" /></li>
-          <li><img src="Photo/box 3.png" alt="Чим ми займаємося" /></li>
+          <li class="text-decoration-none"><img src="Photo/box 1.png" alt="What we do - example 1" /></li>
+          <li class="text-decoration-none"><img src="Photo/box 2.png" alt="What we do - example 2" /></li>
+          <li class="text-decoration-none"><img src="Photo/box 3.png" alt="What we do - example 3" /></li>
         </ul>
       </div>
     </section>
 
-    <!-- Our Team -->
+    <!-- Team Section -->
     <section>
-      <div class="container-main">
+      <div class="container main">
         <h4>Наша команда</h4>
         <ul>
-          <li>
-            <img src="Photo/1.png" alt="Ігор Дем'яненко" />
+          <li class="text-decoration-none">
+            <img src="Photo/1.png" alt="Ihor Demyanenko" />
             <h4>Ігор Дем'яненко</h4>
             <p>Product Designer</p>
           </li>
-          <li>
-            <img src="Photo/2.png" alt="Ольга Рєпіна" />
+          <li class="text-decoration-none">
+            <img src="Photo/2.png" alt="Olha Repina" />
             <h4>Ольга Рєпіна</h4>
             <p>Frontend Developer</p>
           </li>
-          <li>
-            <img src="Photo/3.png" alt="Микола Тарасов" />
+          <li class="text-decoration-none">
+            <img src="Photo/3.png" alt="Mykola Tarasov" />
             <h4>Микола Тарасов</h4>
             <p>Marketing</p>
           </li>
-          <li>
-            <img src="Photo/4.png" alt="Михайло Єрмаков" />
+          <li class="text-decoration-none">
+            <img src="Photo/4.png" alt="Mykhailo Yermakov" />
             <h4>Михайло Єрмаков</h4>
             <p>UI Designer</p>
           </li>
@@ -106,14 +111,15 @@
 
   </main>
 
+  <!-- Footer Section -->
   <footer>
     <div class="container">
       <a href="./index.html" class="logo-text-primary">WebStudio</a>
       <address>
         <p>
           м. Київ, пр-т Лесі Українки, 26<br />
-          info@devstudio.com<br />
-          +38 096 111 11 11
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
+          <a href="tel:+380961111111">+38 096 111 11 11</a>
         </p>
       </address>
     </div>
