@@ -6,6 +6,7 @@
     --color-text-red: red;  
     --color-footer: #2F303A;        /* Цвет для выделения ошибок или предупреждений */
 --color-button-white: #F5F4FA;
+--color-background-team: #F5F4FA;
 }
 
 body {
@@ -24,13 +25,15 @@ body {
     color: var(--secondary-color);              /* Цвет текста — белый */
     background-color: var(--primary-text-color);/* Синий фон */
     padding: 10px 20px;                         /* Внутренние отступы */
-    border-radius: 4px;                         /* Скругление углов */
+    border-radius: 1px;                         /* Скругление углов */
     text-decoration: none;                      /* Удаление подчеркивания */
     text-align: center;                         /* Выравнивание текста по центру */
     display: inline-block;                      /* Позволяет задавать размеры и отступы */
-    border: 1px solid black;                    /* Чёрная рамка */
+    border: 1px solid var(--primary-text-color);                    /* Чёрная рамка */
     margin-bottom: 294px;
     margin-top: 30px;
+    font-size: 16px;
+    border-radius: 4px;
 }
 
 /* Стили для логотипа */
@@ -114,12 +117,11 @@ body {
     padding-top: 85px;
     padding-bottom: 85px; /* Вертикальные отступы */
     margin: 0;  
-    background-image: url(/Photo/Img-studio.jpg);  
     margin-bottom: 94px;       /* Сброс внешнего отступа */
-    background-size: cover;
     background-position: center; /* Центрирование фона */
- gridient: 
-    ); /* Полупрозрачный черный градиент для затемнения фона */
+    background: radial-gradient(20% 20%, rgba(0, 0, 0, 0.4), rgba(2, 0, 0, 0.4)),url(/Photo/Img-studio.jpg);  
+    background-repeat: no-repeat; /* Запрет повторения фона */
+    background-size: cover;
 }
 
 .list {
@@ -147,7 +149,7 @@ body {
 /* Отступ слева для текста адреса */    
 .main-list {
     display: flex;
-    margin-left: 30px;
+    margin-right: 0px;
 }
 
 .main-list-p {
@@ -158,8 +160,9 @@ body {
     list-style-type: none; /* Удаление маркеров у списка */    
 }
 
-.text-decoration-none Features Section {
-    margin-right: 29px;
+.text-decoration-none-Features-Section {
+    margin-right: 30px;
+    list-style-type: none;
 }
 
 .main-h3 {
@@ -197,6 +200,7 @@ logo-text-primary {
     margin-top: 188px;
     text-align: center;
     margin-bottom: 50px;
+    padding-top: 186px;
 }
 
 .footer-section {
@@ -250,4 +254,63 @@ logo-text-primary {
 }
 .portfolio-list-hero:last-child(3n - 1){
     margin-right: 0px;      /* Удаление отступа у последнего элемента */
+}
+.list-h1{
+    color: var(--secondary-color);
+    font-size: 44px;
+}
+.logo-blue{
+    font-size: 26px;
+}
+.logo-text-primary{
+    font-size: 26px;
+    color: var(--color-text-black);
+}
+/* Шрифт хедера */
+.nav-current-studia, 
+.nav-portfolio, 
+.nav-contact, 
+.address-text, .address-number{
+    font-size: 14px;
+}
+.main-list-h2{
+    font-size: 14px;
+}
+.main-h3, .main-h4{
+    font-size: 36px;
+}
+.design{
+    justify-content: center;
+    background-color: var(--color-background-team);
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+.list-h4{
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+.style-list-p4{
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top:10px;
+    padding-bottom: 94px;
+}
+.main-list-img:hover{
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+    transition: transform 0.3s ease; /* Плавный переход */
+}
+.hero-img-clien{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-right: 30px;
+    margin-bottom: 94px;
+}
+.regular-customer{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    margin-top: 94px;
 }
