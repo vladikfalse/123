@@ -114,8 +114,12 @@ body {
     padding-top: 85px;
     padding-bottom: 85px; /* Вертикальные отступы */
     margin: 0;  
-    background-color: var(--color-footer);    
+    background-image: url(/Photo/Img-studio.jpg);  
     margin-bottom: 94px;       /* Сброс внешнего отступа */
+    background-size: cover;
+    background-position: center; /* Центрирование фона */
+ gridient: 
+    ); /* Полупрозрачный черный градиент для затемнения фона */
 }
 
 .list {
@@ -209,6 +213,7 @@ logo-text-primary {
 }
  
 /* Content Portfolio */
+
 .hero-section-portfolio {
     text-align: center;     /* Центрирование содержимого */
     justify-content: center;
@@ -232,4 +237,17 @@ logo-text-primary {
 .buttonMarket:hover {
     background-color: var(--primary-text-color);
     color: var(--secondary-color);
+}
+.portfolio-list-hero{
+    display: flex;
+ list-style-type:none;
+ flex-wrap: wrap;
+}
+.portfolio-list-item{
+  justify-content: space-between;
+  margin-right:30px;
+ 
+}
+.portfolio-list-hero:last-child(3n - 1){
+    margin-right: 0px;      /* Удаление отступа у последнего элемента */
 }
