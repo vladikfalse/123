@@ -40,6 +40,10 @@ body {
 .logo-text-primary {
     color: var(--color-text-black);             /* Цвет логотипа — чёрный */
     text-decoration: none;                      /* Без подчеркивания */
+font-family: Raleway, sans-serif; /* Шрифт логотипа */
+ letter-spacing: 0.78px; /* Межбуквенный интервал */
+    font-weight: 700;                          /* Жирное начертание */
+                         /* Отступ слева для логотипа */
 }
 .logo-blue{
     color: var(--primary-text-color);
@@ -53,7 +57,8 @@ body {
 .address-number {
     color: var(--color-text-black);             /* Цвет текста — чёрный */
     text-decoration: none;                      /* Без подчеркивания */
-                     
+    
+    
 }
 
 .address-text:hover,
@@ -176,7 +181,7 @@ body {
 }
 
 .address-number {
-    margin-right: 15px;
+    margin-right: 0px;
 }
 
 logo-text-primary {
@@ -313,4 +318,32 @@ logo-text-primary {
     margin-bottom: 50px;
     font-size: 36px;
     margin-top: 94px;
+}
+.footer-address{
+    color: var(--color-button-white);
+    font-size: 21px;
+    margin-top: 20px;
+}
+.mail-list{
+    color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  margin-bottom: 9px;
+}
+.namber-address{
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+}
+
+.footer-contact{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.footer-link-social-networks{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+   list-style-type: none; 
+   display: flex;
+   justify-content: space-around;
+   
 }
