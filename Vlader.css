@@ -248,17 +248,9 @@ logo-text-primary {
     color: var(--secondary-color);
 }
 .portfolio-list-hero{
-    display: flex;
+ 
  list-style-type:none;
  flex-wrap: wrap;
-}
-.portfolio-list-item{
-  justify-content: space-between;
-  margin-right:30px;
- 
-}
-.portfolio-list-hero:last-child(3n - 1){
-    margin-right: 0px;      /* Удаление отступа у последнего элемента */
 }
 .list-h1{
     color: var(--secondary-color);
