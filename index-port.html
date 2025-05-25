@@ -5,27 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
 
-  <!-- Stylesheets -->
+  <!-- Custom stylesheet -->
   <link rel="stylesheet" href="Vlader.css" />
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,369;1,369&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,734;1,734&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Normalize CSS for consistent browser rendering -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
 </head>
 <body>
 
+  <!-- Header section -->
   <header class="header">
     <div class="container">
       <nav class="container main-nav">
-        <!-- Logo -->
+
+        <!-- Site logo -->
         <a href="./index.html" class="logo-text-primary"><span class="logo-blue">Web</span>Studio</a>
 
         <!-- Navigation menu -->
         <ul class="nav-list">
-          <li class="iteam"><a href="./index.html" class="nav-studia-portfolio">Студія</a></li>
-          <li class="iteam"><a href="./index-port.html" class="nav-current-portfolio">Портфоліо</a></li>
-          <li class="iteam"><a href="./index-contact.html" class="nav-contact">Контакти</a></li>
+          <li class="iteam">
+            <a href="./index.html" class="nav-studia-portfolio">Студія</a>
+          </li>
+          <li class="iteam">
+            <a href="./index-port.html" class="nav-current-portfolio">Портфоліо</a>
+          </li>
+          <li class="iteam">
+            <a href="./index-contact.html" class="nav-contact">Контакти</a>
+          </li>
         </ul>
 
-        <!-- Contact information -->
+        <!-- Contact info -->
         <div class="address">
           <a href="mailto:info@devstudio.com" class="address-text">info@devstudio.com</a>
           <a href="tel:+380961111111" class="address-number">+38 096 111 11 11</a>
@@ -36,85 +49,111 @@
 
   <main>
 
-<section class="hero-section-portfolio">
-    <div class="container">
-    <a href="" class="buttonAll">Усі</a>
-    <a href="" class="buttonWeb">Веб-сайти</a>
-    <a href="" class="buttonApps">Додатки</a>
-    <a href="" class="buttonDesign">Дизайн</a>
-    <a href="" class="buttonMarket">Маркетинг</a>
-    </div>
-</section>
-<section>
-    <div class="container">
-      <ul class="portfolio-list-hero">
-        <li class="portfolio-list-item">
-    <img src="/Photo/img1.svg" alt="QWE" class="portfolio-list-img">
-    <h1 class="">Технокряк</h1>
-    <p>Веб-сайт</p>
-    </li>
-        <li class="portfolio-list-item">
-    <img src="/Photo/img2.svg" alt="QWE" class="img-hero>
-    <h1 class="">Постер New Orlean vs Golden Star</h1>
-    <p>Дизайн</p>
-    </li>
-        <li class="portfolio-list-item">
- <img src="/Photo/img3.svg" alt="QWE" class="img-hero>
-    <h1 class="">Ресторан Seafood</h1>
-    <p>Додаток</p>
-        </li>
-        <li class="portfolio-list-item">
-<img src="/Photo/img4.svg" alt="QWE" class="img-hero>
-    <h1 class="">Проєкт Prime</h1>
-    <p>Маркетинг</p>
-        </li>
-        <li>
-<img src="/Photo/img5.svg" alt="QWE"class="img-hero">
-    <h1 class="">Проєкт Boxes</h1>
-    <p>Додаток</p>
-        </li>
-         <li>
-<img src="/Photo/img6.svg" alt="QWE"class="img-hero">
-    <h1 class="">Inspiration has no Borders</h1>
-    <p>Веб-сайт</p>
-        </li>
-         <li class="portfolio-list-item">
-<img src="/Photo/img7.svg" alt="QWE" class="img-hero">
-    <h1 class="">Видання Limited Edition</h1>
-    <p>Дизайн</p>
-        </li>
-        <li class="portfolio-list-item">
-<img src="/Photo/img8.svg" alt="QWE" class="img-hero">
-    <h1 class="">Проєкт LAB</h1>
-    <p>Маркетинг</p>
-        </li>
+    <!-- Portfolio filter buttons -->
+    <section class="hero-section-portfolio">
+      <div class="container">
+        <a href="" class="buttonAll">Усі</a>
+        <a href="" class="buttonWeb">Веб-сайти</a>
+        <a href="" class="buttonApps">Додатки</a>
+        <a href="" class="buttonDesign">Дизайн</a>
+        <a href="" class="buttonMarket">Маркетинг</a>
+      </div>
+    </section>
+
+    <!-- Portfolio project list -->
+    <section>
+      <div class="container">
+        <ul class="portfolio-list-hero">
+
+          <!-- Portfolio item 1 -->
           <li class="portfolio-list-item">
-<img src="/Photo/img9.svg" alt="QWE" class="img-hero">
-    <h1 class="">Growing Business</h1>
-    <p>Додаток</p>
-        </li>
-    </ul>
-    </div>
-</section>
+            <img src="/Photo/img1.svg" alt="Technocrack homepage" class="portfolio-list-img">
+            <h1>Технокряк</h1>
+            <p>Веб-сайт</p>
+          </li>
+
+          <!-- Portfolio item 2 -->
+          <li class="portfolio-list-item">
+            <img src="/Photo/img2.svg" alt="Poster for New Orlean vs Golden Star" class="img-hero">
+            <h1>Постер New Orlean vs Golden Star</h1>
+            <p>Дизайн</p>
+          </li>
+
+          <!-- Portfolio item 3 (missing class, now fixed) -->
+          <li class="portfolio-list-item">
+            <img src="/Photo/img3.svg" alt="Seafood restaurant app" class="img-hero">
+            <h1>Ресторан Seafood</h1>
+            <p>Додаток</p>
+          </li>
+
+          <!-- Portfolio item 4 -->
+          <li class="portfolio-list-item">
+            <img src="/Photo/img4.svg" alt="Prime marketing project">
+            <h1>Проєкт Prime</h1>
+            <p>Маркетинг</p>
+          </li>
+
+          <!-- Portfolio item 5 (missing class, now fixed) -->
+          <li class="portfolio-list-item">
+            <img src="/Photo/img5.svg" alt="Boxes app">
+            <h1>Проєкт Boxes</h1>
+            <p>Додаток</p>
+          </li>
+
+          <!-- Portfolio item 6 -->
+          <li class="portfolio-list-item">
+            <img src="/Photo/img6.svg" alt="Creative website project">
+            <h1 class="qwe">Inspiration has no Borders</h1>
+            <p>Веб-сайт</p>
+          </li>
+
+          <!-- Portfolio item 7 -->
+          <li class="portfolio-list-item">
+            <img src="/Photo/img7.svg" alt="Magazine Limited Edition design">
+            <h1>Видання Limited Edition</h1>
+            <p>Дизайн</p>
+          </li>
+
+          <!-- Portfolio item 8 -->
+          <li class="portfolio-list-item">
+            <img src="/Photo/img8.svg" alt="LAB project marketing">
+            <h1>Проєкт LAB</h1>
+            <p>Маркетинг</p>
+          </li>
+
+          <!-- Portfolio item 9 -->
+          <li class="portfolio-list-item">
+            <img src="/Photo/img9.svg" alt="Growing Business app">
+            <h1>Growing Business</h1>
+            <p>Додаток</p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
 
   </main>
 
-  <!-- Footer Section -->
+  <!-- Footer section -->
   <footer class="footer-main">
     <div class="container">
+      <div class="container footer">
+        <section class="footer-section">
 
-    <div class="container footer">
-      <section class="footer-section">
-      <a href="./index.html" class="logo-text-primary">WebStudio</a>
-      <address>
-        <p>
-          м. Київ, пр-т Лесі Українки, 26<br />
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
-        </p>
-      </address>
-      </section>
-    </div>
+          <!-- Footer logo -->
+        <a href="./index.html" class="logo-text-primary"><span class="logo-blue">Web</span>Studio</a>
+
+          <!-- Footer contact info -->
+          <address>
+            <p>
+              м. Київ, пр-т Лесі Українки, 26<br />
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a><br/>
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </p>
+          </address>
+
+        </section>
+      </div>
     </div>
   </footer>
 
