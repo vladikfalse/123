@@ -73,6 +73,27 @@ font-family: Raleway, sans-serif; /* Шрифт логотипа */
     color: var(--primary-text-color);           /* Синий цвет для текущей страницы */
     text-decoration: none;
 }
+.nav-current-studia::before{
+    content: '';                                 /* Псевдоэлемент для создания линии */
+    display: block;                              /* Отображение как блочный элемент */
+    width: 13%;                                 /* Ширина линии равна ширине ссылки */
+    height: 2px;                                 /* Высота линии */
+    background-color: var(--primary-text-color);/* Цвет линии */
+    margin-top: 5px;  /* Отступ сверху */
+    position: absolute;
+    bottom: -85%;
+   
+}
+.nav-current-portfolio::before{
+     content: '';                                 /* Псевдоэлемент для создания линии */
+    display: block;                              /* Отображение как блочный элемент */
+    width: 22%;                                 /* Ширина линии равна ширине ссылки */
+    height: 2px;                                 /* Высота линии */
+    background-color: var(--primary-text-color);/* Цвет линии */
+    margin-top: 5px;  /* Отступ сверху */
+    position: absolute;
+    bottom: -85%;
+}
 
 .nav-current-studia:hover,
 .nav-current-portfolio:hover,
@@ -104,7 +125,9 @@ font-family: Raleway, sans-serif; /* Шрифт логотипа */
 .nav-list {
     list-style-type: none;  /* Удаление маркеров у списка */
     display: flex;  
-    margin-left: 93px;        /* Горизонтальное размещение элементов */
+    margin-left: 93px;   
+    position: relative;  
+    font-size: 14px;   /* Горизонтальное размещение элементов */
 }
 
 .nav-list .iteam {
@@ -248,9 +271,10 @@ logo-text-primary {
     color: var(--secondary-color);
 }
 .portfolio-list-hero{
- 
+ display: flex;
  list-style-type:none;
  flex-wrap: wrap;
+ box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1); /* Тень для карточек */
 }
 .list-h1{
     color: var(--secondary-color);
@@ -339,3 +363,11 @@ logo-text-primary {
    justify-content: space-around;
    
 }
+
+
+.clien-img:hover {
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+    transition: transform 0.3s ease; /* Плавный переход */
+    
+  }
+  
