@@ -207,9 +207,6 @@ font-family: Raleway, sans-serif; /* Шрифт логотипа */
     margin-right: 0px;
 }
 
-logo-text-primary {
-    margin-left: 15px;
-}
 
 .container .What-We-Do-Section {
     display: flex;
