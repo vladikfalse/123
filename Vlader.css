@@ -1,6 +1,6 @@
 :root {
     /* Цветовая палитра проекта */
-    --primary-text-color: #2196F3;  /* Основной акцентный синий цвет */
+    --primary-text-color: rgb(33, 150, 243);  /* Основной акцентный синий цвет */
     --secondary-color: white;       /* Вторичный цвет — белый, используется для текста на цветных кнопках */
     --color-text-black: black;      /* Базовый цвет текста */
     --color-text-red: red;  
@@ -207,7 +207,6 @@ font-family: Raleway, sans-serif; /* Шрифт логотипа */
     margin-right: 0px;
 }
 
-
 .container .What-We-Do-Section {
     display: flex;
     justify-content: space-between; 
@@ -235,6 +234,24 @@ font-family: Raleway, sans-serif; /* Шрифт логотипа */
 
 .footer-main {
     background-color: var(--color-footer);
+    position:relative;
+}
+.footer-link-social-networks{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    top: 20%;
+    right: 50%;
+   
+}
+.footer-link-social-networks-item{
+    list-style-type: none;
+    font-size: 14px;
+    color:  var(--secondary-color);
+    font-weight: 700;
+    font-style: bold;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 .container main-nav {
@@ -351,20 +368,173 @@ font-family: Raleway, sans-serif; /* Шрифт логотипа */
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.footer-link-social-networks{
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-   list-style-type: none; 
-   display: flex;
-   justify-content: space-around;
-   
-}
 
 
 .clien-img:hover {
     transform: scale(1.05); /* Увеличение изображения при наведении */
     transition: transform 0.3s ease; /* Плавный переход */
     
-  }
-  
+}
+.footer-link-social-networks-list{
+list-style-type: none;
+display: flex;
+justify-content: center;
+margin: 0;
+padding: 0;
+}
+/* Instagram */
+
+.img-instagram {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+/* подложка — фон при ховере */
+.img-instagram::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0); /* изначально прозрачный */
+  transition: background-color 0.3s ease;
+  z-index: 1; /* ниже картинки */
+}
+
+/* сама картинка */
+.img-instagram::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/Photo/Ellipse 1.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2; /* поверх подложки */
+}
+
+.img-instagram:hover::before {
+  background-color: rgba(33, 150, 243, 1); /* появляется при ховере */
+}
+
+
+/* Twitter */
+
+.img-twitter {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-right:10px ;
+}
+
+/* подложка — фон при ховере */
+.img-twitter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0); /* изначально прозрачный */
+  transition: background-color 0.3s ease;
+  z-index: 1; /* ниже картинки */
+}
+
+/* сама картинка */
+.img-twitter::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/Photo/Ellipse2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2; /* поверх подложки */
+}
+
+.img-twitter:hover::before {
+  background-color: rgba(33, 150, 243, 1); /* появляется при ховере */
+}
+
+/* Facebook */
+
+.img-facebook {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+/* подложка — фон при ховере */
+.img-facebook::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0); /* изначально прозрачный */
+  transition: background-color 0.3s ease;
+  z-index: 1; /* ниже картинки */
+}
+
+/* сама картинка */
+.img-facebook::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/Photo/Ellipse3.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2; /* поверх подложки */
+}
+
+.img-facebook:hover::before {
+  background-color: rgba(33, 150, 243, 1); /* появляется при ховере */
+}
+
+
+/* img-li */
+
+.img-li {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+/* подложка — фон при ховере */
+.img-li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0); /* изначально прозрачный */
+  transition: background-color 0.3s ease;
+  z-index: 1; /* ниже картинки */
+}
+
+/* сама картинка */
+.img-li::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/Photo/Ellipse.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2; /* поверх подложки */
+}
+
+.img-li:hover::before {
+  background-color: rgba(33, 150, 243, 1); /* появляется при ховере */
+}
