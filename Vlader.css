@@ -147,7 +147,7 @@ font-family: Raleway, sans-serif; /* Шрифт логотипа */
     margin: 0;  
     margin-bottom: 94px;       /* Сброс внешнего отступа */
     background-position: center; /* Центрирование фона */
-    background: radial-gradient(20% 20%, rgba(0, 0, 0, 0.4), rgba(2, 0, 0, 0.4)),url(Photo/Img-studio.jpg);  
+    background: radial-gradient(20% 20%, rgba(0, 0, 0, 0.4), rgba(2, 0, 0, 0.4)),url(Photo/img-studio.jpg); /* Фоновое изображение с градиентом */
     background-repeat: no-repeat; /* Запрет повторения фона */
     background-size: cover;
 }
