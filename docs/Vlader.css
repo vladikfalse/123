@@ -1,116 +1,111 @@
 :root {
-    /* Цветовая палитра проекта */
-    --primary-text-color: rgb(33, 150, 243);  /* Основной акцентный синий цвет */
-    --secondary-color: white;       /* Вторичный цвет — белый, используется для текста на цветных кнопках */
-    --color-text-black: black;      /* Базовый цвет текста */
-    --color-text-red: red;  
-    --color-footer: #2F303A;        /* Цвет для выделения ошибок или предупреждений */
---color-button-white: #F5F4FA;
---color-background-team: #F5F4FA;
+  --primary-text-color: rgb(33, 150, 243);
+  --secondary-color: white;
+  --color-text-black: black;
+  --color-text-red: red;
+  --color-footer: #2F303A;
+  --color-button-white: #F5F4FA;
+  --color-background-team: #F5F4FA;
 }
 
 body {
-    font-family: "Roboto", sans-serif;   /* Современный шрифт без засечек */
-    font-optical-sizing: auto;           /* Автоматическая настройка отображения шрифта */
-    font-weight: 400;                    /* Нормальное начертание текста */
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 .container {
-    width: 1200px;       /* Фиксированная ширина для контента */
-    margin: 0 auto;      /* Центрирование контейнера по горизонтали */
+  width: 1200px;
+  margin: 0 auto;
 }
 
-/* Стили для основной кнопки */
 .button-primary {
-    color: var(--secondary-color);              /* Цвет текста — белый */
-    background-color: var(--primary-text-color);/* Синий фон */
-    padding: 10px 20px;                         /* Внутренние отступы */
-    border-radius: 1px;                         /* Скругление углов */
-    text-decoration: none;                      /* Удаление подчеркивания */
-    text-align: center;                         /* Выравнивание текста по центру */
-    display: inline-block;                      /* Позволяет задавать размеры и отступы */
-    border: 1px solid var(--primary-text-color);                    /* Чёрная рамка */
-    margin-bottom: 294px;
-    margin-top: 30px;
-    font-size: 16px;
-    border-radius: 4px;
+  color: var(--secondary-color);
+  background-color: var(--primary-text-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid var(--primary-text-color);
+  font-size: 16px;
+  margin: 30px 0 294px;
+  border-radius: 4px;
 }
 
-/* Стили для логотипа */
+.logo-text-primary,
+.logo-blue {
+  font-size: 26px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+  text-decoration: none;
+}
+
 .logo-text-primary {
-    color: var(--color-text-black);             /* Цвет логотипа — чёрный */
-    text-decoration: none;                      /* Без подчеркивания */
-font-family: Raleway, sans-serif; /* Шрифт логотипа */
- letter-spacing: 0.78px; /* Межбуквенный интервал */
-    font-weight: 700;                          /* Жирное начертание */
-                         /* Отступ слева для логотипа */
-}
-.logo-blue{
-    color: var(--primary-text-color);
-}
-.logo-text-primary:hover {
-    color: var(--primary-text-color);           /* Подсветка логотипа при наведении */
+  color: var(--color-text-black);
 }
 
-/* Контактная информация */
+.logo-blue {
+  color: var(--primary-text-color);
+}
+
+.logo-text-primary:hover {
+  color: var(--primary-text-color);
+}
+
 .address-text,
 .address-number {
-    color: var(--color-text-black);             /* Цвет текста — чёрный */
-    text-decoration: none;                      /* Без подчеркивания */
-    
-    
+  color: var(--color-text-black);
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .address-text:hover,
 .address-number:hover {
-    color: var(--primary-text-color);           /* Подсветка при наведении */
+  color: var(--primary-text-color);
 }
 
-/* Навигация — активные ссылки */
 .nav-current-studia,
 .nav-current-portfolio,
 .nav-contact-current {
-    color: var(--primary-text-color);           /* Синий цвет для текущей страницы */
-    text-decoration: none;
+  color: var(--primary-text-color);
+  text-decoration: none;
 }
-.nav-current-studia::before{
-    content: '';                                 /* Псевдоэлемент для создания линии */
-    display: block;                              /* Отображение как блочный элемент */
-    width: 13%;                                 /* Ширина линии равна ширине ссылки */
-    height: 2px;                                 /* Высота линии */
-    background-color: var(--primary-text-color);/* Цвет линии */
-    margin-top: 5px;  /* Отступ сверху */
-    position: absolute;
-    bottom: -85%;
-   
+
+.nav-current-studia::before,
+.nav-current-portfolio::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: var(--primary-text-color);
+  margin-top: 5px;
+  position: absolute;
+  bottom: -85%;
 }
-.nav-current-portfolio::before{
-     content: '';                                 /* Псевдоэлемент для создания линии */
-    display: block;                              /* Отображение как блочный элемент */
-    width: 22%;                                 /* Ширина линии равна ширине ссылки */
-    height: 2px;                                 /* Высота линии */
-    background-color: var(--primary-text-color);/* Цвет линии */
-    margin-top: 5px;  /* Отступ сверху */
-    position: absolute;
-    bottom: -85%;
+
+.nav-current-studia::before {
+  width: 13%;
+}
+
+.nav-current-portfolio::before {
+  width: 22%;
 }
 
 .nav-current-studia:hover,
 .nav-current-portfolio:hover,
 .nav-current-portfolio:focus,
 .nav-contact-current:focus {
-    color: var(--primary-text-color);           /* Подсветка при наведении или фокусе */
+  color: var(--primary-text-color);
 }
 
-/* Навигация — обычные ссылки */
 .nav-portfolio,
 .nav-contact,
 .nav-studia-portfolio,
 .nav-contact-portfolio,
 .nav-portfolio-portfolio,
 .nav-studia-contact {
-    color: var(--color-text-black);             /* Стандартный цвет текста */
-    text-decoration: none;
+  color: var(--color-text-black);
+  text-decoration: none;
 }
 
 .nav-portfolio:hover,
@@ -118,391 +113,252 @@ font-family: Raleway, sans-serif; /* Шрифт логотипа */
 .nav-contact:hover,
 .nav-contact-portfolio:hover,
 .nav-contact-portfolio:focus {
-    color: var(--primary-text-color);           /* Подсветка при наведении */
+  color: var(--primary-text-color);
 }
 
-/* Список навигации */
 .nav-list {
-    list-style-type: none;  /* Удаление маркеров у списка */
-    display: flex;  
-    margin-left: 93px;   
-    position: relative;  
-    font-size: 14px;   /* Горизонтальное размещение элементов */
+  list-style-type: none;
+  display: flex;
+  margin-left: 93px;
+  position: relative;
+  font-size: 14px;
 }
 
 .nav-list .iteam {
-    display: block;         /* Отображение как блочный элемент */
-    margin-right: 50px;
+  display: block;
+  margin-right: 50px;
 }
 
 .nav-list .iteam:last-child {
-    margin-right: 0px;      /* Удаление отступа у последнего элемента */
+  margin-right: 0;
 }
 
-/* Главный блок с приветствием или баннером */
 .hero-section {
-    text-align: center;     /* Центрирование содержимого */
-    padding-top: 85px;
-    padding-bottom: 85px; /* Вертикальные отступы */
-    margin: 0;  
-    margin-bottom: 94px;       /* Сброс внешнего отступа */
-    background-position: center; /* Центрирование фона */
-    background: radial-gradient(20% 20%, rgba(0, 0, 0, 0.4), rgba(2, 0, 0, 0.4)),url(Photo/img-studio.jpg); /* Фоновое изображение с градиентом */
-    background-repeat: no-repeat; /* Запрет повторения фона */
-    background-size: cover;
+  text-align: center;
+  padding: 85px 0;
+  margin: 0 0 94px;
+  background: radial-gradient(20% 20%, rgba(0, 0, 0, 0.4), rgba(2, 0, 0, 0.4)), url(Photo/img-studio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .list {
-    text-align: center;
-    color: var(--secondary-color);
+  text-align: center;
+  color: var(--secondary-color);
 }
 
-/* Контейнер контактной информации */
 .address {
-    display: flex;          /* Горизонтальное расположение элементов */
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
 .address .address-text {
-    margin-right: 50px;     /* Отступ между адресом и номером */
+  margin-right: 50px;
 }
 
-/* Контейнер верхней навигации (логотип, меню, контакты) */
 .container .main-nav {
-    display: flex;          /* Размещение элементов в одну линию */
-    align-items: center; 
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Отступ слева для текста адреса */    
 .main-list {
-    display: flex;
-    margin-right: 0px;
+  display: flex;
+  margin-right: 0;
 }
 
 .main-list-p {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
-.text-decoration-none { 
-    list-style-type: none; /* Удаление маркеров у списка */    
+.text-decoration-none,
+.text-decoration-none-Features-Section {
+  list-style-type: none;
 }
 
 .text-decoration-none-Features-Section {
-    margin-right: 30px;
-    list-style-type: none;
+  margin-right: 30px;
+}
+
+.main-h3,
+.main-h4 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .main-h3 {
-    margin-top: 94px;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.address-text {
-    margin-left: 344px; 
-}
-
-.address-number {
-    margin-right: 0px;
-}
-
-.container .What-We-Do-Section {
-    display: flex;
-    justify-content: space-between; 
-    margin-top: 50px;
-}
-
-.Team-Section {
-    display: flex;
-    justify-content: space-between; 
-    margin-top: 50px;
-    margin-bottom: 94px;   
+  margin-top: 94px;
 }
 
 .main-h4 {
-    margin-top: 188px;
-    text-align: center;
-    margin-bottom: 50px;
-    padding-top: 186px;
+  margin-top: 188px;
+  padding-top: 186px;
+}
+
+.address-text {
+  margin-left: 344px;
+}
+
+.container .What-We-Do-Section,
+.Team-Section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.Team-Section {
+  margin-bottom: 94px;
 }
 
 .footer-section {
-    padding-top: 60px;
-    padding-bottom: 60px; /* Цвет фона для нижнего колонтитула */              
+  padding: 60px 0;
 }
 
 .footer-main {
-    background-color: var(--color-footer);
-    position:relative;
+  background-color: var(--color-footer);
+  position: relative;
 }
-.footer-link-social-networks{
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    position: absolute;
-    top: 20%;
-    right: 50%;
-   
+
+.footer-link-social-networks {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  right: 50%;
 }
-.footer-link-social-networks-item{
-    list-style-type: none;
-    font-size: 14px;
-    color:  var(--secondary-color);
-    font-weight: 700;
-    font-style: bold;
-    text-transform: uppercase;
-    text-align: left;
+
+.footer-link-social-networks-item {
+  list-style-type: none;
+  font-size: 14px;
+  color: var(--secondary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .container main-nav {
-    margin-left: auto;
+  margin-left: auto;
 }
- 
-/* Content Portfolio */
 
 .hero-section-portfolio {
-    text-align: center;     /* Центрирование содержимого */
-    justify-content: center;
-   
+  text-align: center;
+  justify-content: center;
 }
-.buttonAll, .buttonWeb,
-.buttonApps, .buttonDesign,
-.buttonMarket{
-    padding: 8px 20px;
-    background-color: var(--color-button-white);
-    display: inline-block;
-    border-radius: 3px;
-    color: var(--color-text-black);
-    text-decoration: none;
-    margin-left: 8px;
-    margin-top: 95px;
-    margin-bottom: 34px;
-}
-.buttonAll:hover, .buttonWeb:hover,
-.buttonApps:hover, .buttonDesign:hover,
-.buttonMarket:hover {
-    background-color: var(--primary-text-color);
-    color: var(--secondary-color);
-}
-.portfolio-list-hero{
- display: flex;
- list-style-type:none;
- flex-wrap: wrap;
- box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1); /* Тень для карточек */
-}
-.list-h1{
-    color: var(--secondary-color);
-    font-size: 44px;
-}
-.logo-blue{
-    font-size: 26px;
-}
-.logo-text-primary{
-    font-size: 26px;
-    color: var(--color-text-black);
-}
-/* Шрифт хедера */
-.nav-current-studia, 
-.nav-portfolio, 
-.nav-contact, 
-.address-text, .address-number{
-    font-size: 14px;
-}
-.main-list-h2{
-    font-size: 14px;
-}
-.main-h3, .main-h4{
-    font-size: 36px;
-}
-.design{
-    justify-content: center;
-    background-color: var(--color-background-team);
-    padding-right: 15px;
-    padding-left: 15px;
-    text-align: center;
-}
-.list-h4{
-    font-size: 16px;
-    margin-bottom: 0px;
-    margin-top: 30px;
-}
-.style-list-p4{
-    font-size: 16px;
-    margin-bottom: 0px;
-    margin-top:10px;
-    padding-bottom: 94px;
-}
-.main-list-img:hover{
-    transform: scale(1.05); /* Увеличение изображения при наведении */
-    transition: transform 0.3s ease; /* Плавный переход */
-}
-.hero-img-clien{
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin-right: 30px;
-    margin-bottom: 94px;
-}
-.regular-customer{
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 36px;
-    margin-top: 94px;
-}
-.footer-address{
-    color: var(--color-button-white);
-    font-size: 21px;
-    margin-top: 20px;
-}
-.mail-list{
-    color: rgba(255,255,255,0.6);
+
+.buttonAll,
+.buttonWeb,
+.buttonApps,
+.buttonDesign,
+.buttonMarket {
+  padding: 8px 20px;
+  background-color: var(--color-button-white);
+  display: inline-block;
+  border-radius: 3px;
+  color: var(--color-text-black);
   text-decoration: none;
+  margin: 95px 0 34px 8px;
+}
+
+.buttonAll:hover,
+.buttonWeb:hover,
+.buttonApps:hover,
+.buttonDesign:hover,
+.buttonMarket:hover {
+  background-color: var(--primary-text-color);
+  color: var(--secondary-color);
+}
+
+.portfolio-list-hero {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.list-h1 {
+  color: var(--secondary-color);
+  font-size: 44px;
+}
+
+.main-list-h2 {
+  font-size: 14px;
+}
+
+.design {
+  justify-content: center;
+  background-color: var(--color-background-team);
+  padding: 0 15px;
+  text-align: center;
+}
+
+.list-h4,
+.style-list-p4 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.list-h4 {
+  margin-top: 30px;
+}
+
+.style-list-p4 {
+  padding-bottom: 94px;
+}
+
+.main-list-img:hover,
+.clien-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.hero-img-clien {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0 30px 94px 0;
+}
+
+.regular-customer {
+  text-align: center;
+  font-size: 36px;
+  margin: 94px 0 50px;
+}
+
+.footer-address {
+  color: var(--color-button-white);
+  font-size: 21px;
+  margin-top: 20px;
+}
+
+.mail-list,
+.namber-address {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.mail-list {
   margin-bottom: 9px;
 }
-.namber-address{
-    color: rgba(255,255,255,0.6);
-    text-decoration: none;
+
+.footer-contact {
+  margin: 10px 0;
 }
 
-.footer-contact{
-    margin-bottom: 10px;
-    margin-top: 10px;
+.footer-link-social-networks-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-
-.clien-img:hover {
-    transform: scale(1.05); /* Увеличение изображения при наведении */
-    transition: transform 0.3s ease; /* Плавный переход */
-    
-}
-.footer-link-social-networks-list{
-list-style-type: none;
-display: flex;
-justify-content: center;
-margin: 0;
-padding: 0;
-}
-/* Instagram */
-
-.img-instagram {
-  position: relative;
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-top: 20px;
-  margin-right: 10px;
-}
-
-/* подложка — фон при ховере */
-.img-instagram::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0); /* изначально прозрачный */
-  transition: background-color 0.3s ease;
-  z-index: 1; /* ниже картинки */
-}
-
-/* сама картинка */
-.img-instagram::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url('Photo/Ellipse 1.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 2; /* поверх подложки */
-}
-
-.img-instagram:hover::before {
-  background-color: rgba(33, 150, 243, 1); /* появляется при ховере */
-}
-
-
-/* Twitter */
-
-.img-twitter {
-  position: relative;
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-top: 20px;
-  margin-right:10px ;
-}
-
-/* подложка — фон при ховере */
-.img-twitter::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0); /* изначально прозрачный */
-  transition: background-color 0.3s ease;
-  z-index: 1; /* ниже картинки */
-}
-
-/* сама картинка */
-.img-twitter::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url('Photo/Ellipse2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 2; /* поверх подложки */
-}
-
-.img-twitter:hover::before {
-  background-color: rgba(33, 150, 243, 1); /* появляется при ховере */
-}
-
-/* Facebook */
-
-.img-facebook {
-  position: relative;
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-top: 20px;
-  margin-right: 10px;
-}
-
-/* подложка — фон при ховере */
-.img-facebook::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0); /* изначально прозрачный */
-  transition: background-color 0.3s ease;
-  z-index: 1; /* ниже картинки */
-}
-
-/* сама картинка */
-.img-facebook::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url('Photo/Ellipse3.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 2; /* поверх подложки */
-}
-
-.img-facebook:hover::before {
-  background-color: rgba(33, 150, 243, 1); /* появляется при ховере */
-}
-
-
-/* img-li */
-
+/* Соц. іконки — спільні стилі */
+.img-instagram,
+.img-twitter,
+.img-facebook,
 .img-li {
   position: relative;
   display: inline-block;
@@ -511,30 +367,57 @@ padding: 0;
   border-radius: 50%;
   overflow: hidden;
   margin-top: 20px;
+  margin-right: 10px;
 }
 
-/* подложка — фон при ховере */
+.img-li {
+  margin-right: 0;
+}
+
+.img-instagram::after {
+  background-image: url('Photo/Ellipse 1.svg');
+}
+
+.img-twitter::after {
+  background-image: url('Photo/Ellipse2.png');
+}
+
+.img-facebook::after {
+  background-image: url('Photo/Ellipse3.svg');
+}
+
+.img-li::after {
+  background-image: url('Photo/Ellipse.svg');
+}
+
+.img-instagram::before,
+.img-twitter::before,
+.img-facebook::before,
 .img-li::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0); /* изначально прозрачный */
+  background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.3s ease;
-  z-index: 1; /* ниже картинки */
+  z-index: 1;
 }
 
-/* сама картинка */
+.img-instagram::after,
+.img-twitter::after,
+.img-facebook::after,
 .img-li::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('Photo/Ellipse.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 2; /* поверх подложки */
+  z-index: 2;
 }
 
+.img-instagram:hover::before,
+.img-twitter:hover::before,
+.img-facebook:hover::before,
 .img-li:hover::before {
-  background-color: rgba(33, 150, 243, 1); /* появляется при ховере */
+  background-color: rgba(33, 150, 243, 1);
 }
