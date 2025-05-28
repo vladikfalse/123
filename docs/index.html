@@ -33,7 +33,7 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="list-h1">Ефективні рішення для <br />вашого бізнесу</h1>
-          <a href="#" class="button-primary">Замовити послугу</a>
+          <button class="button-primary" data-open-modal>Замовити послугу</button>
         </div>
       </section>
 
@@ -118,6 +118,18 @@
           </ul>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+          <p class="modal-window-text">Залиште свої дані, ми вам передзвонимо</p>
+          <p class="modal-window-name">Ім'я</p>
+          <p class="madal-window-phone">Телефон</p>
+          <p class="madal-window-mail">Пошта</p>
+          <p class="madal-window-coment">Коментар</p>
+          <p class="madal-window-politic">Погоджуюся з розсилкою та приймаю <a href="#" class="madal-window-politic-link">Умови договору</a></p>
+
+          <button class="button-primary-madal"data-close-modal>Відправити</button>
+        </div>
+      </div>
     </main>
 
     <footer class="footer-main">
@@ -145,5 +157,27 @@
         </section>
       </div>
     </footer>
+
+  <script>
+  const refs = {
+    openModalBtn: document.querySelector("[data-open-modal]"),
+    closeModalBtn: document.querySelector("[data-close-modal]"),
+    backdrop: document.querySelector("[data-backdrop]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  refs.backdrop.addEventListener("click", logBackdropClick);
+
+  function toggleModal() {
+    refs.backdrop.classList.toggle("is-hidden");
+  }
+
+  function logBackdropClick() {
+    console.log("Это клик в бекдроп");
+  }
+</script>
+
   </body>
 </html>
