@@ -546,15 +546,11 @@ margin-bottom: 94px;
   margin-top: 40px;
   margin-bottom: 12px;
 }
-.modal-window-name,
-.madal-window-mail,
-.madal-window-phone,
-.madal-window-coment,.madal-window-politic {
- color: var(--color-text-paragraph);
- margin-bottom: 54px;
- margin-left: 40px;
- text-align: left;
-}
+
 .madal-window-politic-link{
   color: var(--color-modal-politic);
+}
+
+.js-speaker-form:hover{
+ color: #2196F3;
 }

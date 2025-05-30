@@ -121,17 +121,24 @@
       <div class="backdrop is-hidden" data-backdrop>
         <div class="modal">
           <p class="modal-window-text">Залиште свої дані, ми вам передзвонимо</p>
-          <p class="modal-window-name">Ім'я</p>
-          <p class="madal-window-phone">Телефон</p>
+         <label for="name">Імя</label>
+          <form class="js-speaker-form">
+          <input type="text" name="user-name" id="name">
+           <label for="number">Телефон</label>
+           <input type="text" name="number-phone" id="namber">
+           <label for="mail">Пошта</label>
+           <input type="text" name="mail" id="mail">
+          </form>
+          
+
           <p class="madal-window-mail">Пошта</p>
           <p class="madal-window-coment">Коментар</p>
-          <p class="madal-window-politic">Погоджуюся з розсилкою та приймаю <a href="#" class="madal-window-politic-link">Умови договору</a></p>
+          <p class="madal-window-politic">Погоджуюся з розсилкою та приймаю<a href="#" class="madal-window-politic-link">Умови договору</a></p>
 
           <button class="button-primary-madal"data-close-modal>Відправити</button>
         </div>
       </div>
     </main>
-
     <footer class="footer-main">
       <div class="container footer">
         <section class="footer-section">
