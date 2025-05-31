@@ -548,9 +548,16 @@ margin-bottom: 94px;
 }
 
 .madal-window-politic-link{
-  color: var(--color-modal-politic);
+  color: var(--color-modal-politiс);
 }
 
-.js-speaker-form:hover{
- color: #2196F3;
+
+.form-group{
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  margin-left: 40px;
 }
+.
+
