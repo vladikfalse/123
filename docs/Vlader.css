@@ -35,7 +35,7 @@ body {
   font-size: 16px;
   margin: 30px 0 294px;
   border-radius: 4px;
-  margin-left: 164px;
+  
   margin-top: 30px;
   margin-bottom: 0;
   
@@ -518,18 +518,16 @@ margin-bottom: 94px;
   pointer-events: none;
 }
 .modal{
-
   position: absolute;
   top: 50%;
   left:50%;
   width: 530px;
   height: 580px;
   transform: translate( -50%, -50%);  
-  
+  border-radius: 4px;
  background-color: var(--secondary-color);
 }
 .button-primary-madal{
-  
   color: var(--secondary-color);
   background-color: var(--primary-text-color);
   padding: 10px 20px;
@@ -538,8 +536,11 @@ margin-bottom: 94px;
   display: inline-block;
   border: 1px solid var(--primary-text-color);
   font-size: 16px;
+  margin: 30px 0 294px;
   border-radius: 4px;
- 
+  margin-top: 30px;
+  margin-left: 200px;  
+  margin-bottom: 0;
 }
 .modal-window-text{
   font-size: 20px;
@@ -555,7 +556,7 @@ margin-bottom: 94px;
 
 
 .form-group{
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   width: 448px;
@@ -572,4 +573,46 @@ textarea{
   margin-left: 52px;
   margin-top: 20px;
   margin-bottom: 0;
+}
+.button-primary-madal-closed{
+ position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* делает кнопку круглой */
+  background-color: white; /* или любой другой цвет фона */
+  border: 1px solid #ffffff93;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+.button-primary-madal-closed{
+ border: 1px solid #a8a8a87e;
+}
+.form-group{
+  position: relative;
+  
+}
+ .icon{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+   display: inline-block;
+transform: translate(-50% -50%);
+   width: 20px;
+  height: 20px;
+  background-color: black;
+ }
+.name{
+  margin-left: 40px;
+}
+.form-control:focus ~ .icon{
+  left: 10px;
+  top: 10px;
+  background-color: red;
 }
