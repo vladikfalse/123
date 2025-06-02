@@ -126,31 +126,33 @@
       <div class="styling-form">
         <div class="form-group">
           <label for="name">Ім'я</label>
-          <input type="text" name="user-name" id="name">
+          <input type="text" name="user-name" id="name" class="form-control">
         </div>
 
         <div class="form-group">
           <label for="number">Телефон</label>
-          <input type="text" name="number-phone" id="number">
+          <input type="text" name="number-phone" id="number" class="form-control">
         </div>
 
         <div class="form-group">
           <label for="mail">Пошта</label>
-          <input type="email" name="mail" id="mail">
+          <input type="email" name="mail" id="mail" class="form-control">
         </div>
 
         <div class="form-group">
-         <textarea name="comment" name="Коментар"  id="comment">Коментар</textarea>
-         
+          <label for="comment">Коментар</label>
+         <textarea name="comment" cols="" rows="5" id="comment"></textarea>
+        
         </div>
       </div>
 
       <p class="modal-window-politic">
-        I agree to the newsletter and accept the 
-        <a href="#" class="modal-window-politic-link">Terms of Service</a>
+         <input type="checkbox" name="checkbox" id="checkbox" сlass="checkbox">
+        Погоджуюся з розсилкою та приймаю 
+        <a href="#" class="modal-window-politic-link">Умови договору</a>
       </p>
 
-      <button class="button-primary" data-close-modal>Send</button>
+      <button type="submit"class="button-primary" data-close-modal>Відправити</button>
     </form>
   </div>
 </div>
