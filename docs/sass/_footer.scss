@@ -1,0 +1,22 @@
+.footer-main {
+  background-color: var(--color-footer);
+  position: relative;
+
+  .footer-section {
+    padding: 60px 0;
+  }
+
+  .footer-link-social-networks {
+    position: absolute;
+    top: 20%;
+    right: 50%;
+
+    .footer-link-social-networks-item {
+      list-style-type: none;
+      font-size: 14px;
+      color: var(--secondary-color);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}

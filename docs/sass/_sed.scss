@@ -1,0 +1,25 @@
+.address {
+  display: flex;
+  align-items: flex-end;
+
+  .address-text {
+    color: var(--color-text-black);
+    font-size: 14px;
+    margin-right: 50px;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary-text-color);
+    }
+  }
+
+  .address-number {
+    color: var(--color-text-black);
+    font-size: 14px;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary-text-color);
+    }
+  }
+}
