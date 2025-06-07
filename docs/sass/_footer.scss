@@ -7,6 +7,8 @@
   }
 
   .footer-link-social-networks {
+    padding: 0;
+    margin: 0;
     position: absolute;
     top: 20%;
     right: 50%;
@@ -17,6 +19,35 @@
       color: var(--secondary-color);
       font-weight: 700;
       text-transform: uppercase;
+      text-align: left;
     }
+  }
+
+  .footer-link-social-networks-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-address {
+    color: var(--color-button-white);
+    font-size: 21px;
+    margin-top: 20px;
+  }
+
+  .mail-list,
+  .namber-address {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
+
+  .mail-list {
+    margin-bottom: 9px;
+  }
+
+  .footer-contact {
+    margin: 10px 0;
   }
 }

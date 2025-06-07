@@ -1,5 +1,4 @@
 @use 'variables';
-@use 'mixins';
 @use 'globals';
 @use 'buttons';
 @use 'logo';
@@ -8,4 +7,10 @@
 @use 'hero';
 @use 'features';
 @use 'team';
+@use 'clients';
+@use 'portfolio';
 @use 'footer';
+@use 'modal';
+@use 'form';
+@use 'overlay';
+@use 'rec';

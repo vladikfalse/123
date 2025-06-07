@@ -1,6 +1,11 @@
 .button-primary,
 .button-primary-madal,
-.button-primary-madal-closed {
+.button-primary-madal-closed,
+.buttonAll,
+.buttonWeb,
+.buttonApps,
+.buttonDesign,
+.buttonMarket {
   color: var(--secondary-color);
   background-color: var(--primary-text-color);
   padding: 10px 20px;
@@ -14,4 +19,27 @@
 
 .button-primary {
   margin: 30px 0 0;
+}
+
+.button-primary-madal {
+  margin-left: 200px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.buttonAll,
+.buttonWeb,
+.buttonApps,
+.buttonDesign,
+.buttonMarket {
+  background-color: var(--color-button-white);
+  color: var(--color-text-black);
+  border-radius: 3px;
+  margin: 95px 0 34px 8px;
+  padding: 8px 20px;
+
+  &:hover {
+    background-color: var(--primary-text-color);
+    color: var(--secondary-color);
+  }
 }

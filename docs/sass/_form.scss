@@ -1,0 +1,31 @@
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  margin-left: 40px;
+  position: relative;
+}
+
+.form-control {
+  height: 40px;
+
+  &:focus ~ .icon {
+    background-color: red;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  transform: translate(-50%, -50%);
+}
+
+.name {
+  margin-left: 40px;
+}

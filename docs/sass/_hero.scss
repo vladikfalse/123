@@ -6,4 +6,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  .list-h1 {
+    color: var(--secondary-color);
+    font-size: 44px;
+  }
+}
+
+.list {
+  text-align: center;
+  color: var(--secondary-color);
 }

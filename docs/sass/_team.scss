@@ -1,5 +1,25 @@
 .Team-Section {
-  display: flex;
-  justify-content: space-between;
-  margin: 50px 0 94px;
+  margin-bottom: 94px;
+}
+
+.design {
+  justify-content: center;
+  background-color: var(--color-background-team);
+  padding: 0 15px;
+  text-align: center;
+}
+
+.list-h4,
+.style-list-p4 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.list-h4 {
+  margin-top: 30px;
+}
+
+.style-list-p4 {
+  padding-bottom: 94px;
 }

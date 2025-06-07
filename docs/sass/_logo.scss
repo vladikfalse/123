@@ -1,16 +1,20 @@
-.logo-text-primary {
+.logo-text-primary,
+.logo-blue {
   font-size: 26px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   letter-spacing: 0.78px;
   text-decoration: none;
+}
+
+.logo-text-primary {
   color: var(--color-text-black);
 
   &:hover {
     color: var(--primary-text-color);
   }
+}
 
-  .logo-blue {
-    color: var(--primary-text-color);
-  }
+.logo-blue {
+  color: var(--primary-text-color);
 }
