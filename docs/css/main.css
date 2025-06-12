@@ -524,7 +524,7 @@ body {
   text-align: center;
   padding: 85px 0;
   margin: 0 0 94px;
-  background: radial-gradient(20% 20%, rgba(0, 0, 0, 0.4), rgba(2, 0, 0, 0.4)), url("../Photo/img-studio.jpg") 
+  background: radial-gradient(20% 20%, rgba(0, 0, 0, 0.4), rgba(2, 0, 0, 0.4)), url(/docs/Photo/img-studio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -843,7 +843,6 @@ textarea {
     height: 120px; /* або фіксована висота */
     -o-object-fit: cover;
        object-fit: cover; /* або contain, залежно від потреб */
-    display: block;
   }
 }
 @media screen and (max-width: 480px) {
@@ -873,5 +872,55 @@ textarea {
   .button-primary {
     font-size: 16px;
     padding: 5px 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .What-We-Do {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-h4 {
+    font-size: 28px;
+    margin-right: 0; /* Видаляємо відступ справа */
+    text-align: center; /* Центруємо текст */
+  }
+}
+@media screen and (max-width: 480px) {
+  .Team-Section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .text-decoration-none {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  .fonts-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    gap: 2px;
+    width: 100%;
+  }
+  .fonts-img img {
+    width: 100%;
+    /* ограничение по ширине */
+    height: auto;
   }
 }/*# sourceMappingURL=main.css.map */
