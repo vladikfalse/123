@@ -1,0 +1,144 @@
+.address {
+  display: flex;
+  align-items: flex-end;
+}
+
+.address .address-text {
+  margin-right: 50px;
+}
+
+.address-text,
+.address-number {
+  color: var(--color-text-black);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.address-text:hover,
+.address-number:hover {
+  color: var(--primary-text-color);
+}
+
+.container .main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-list {
+  display: flex;
+  margin-right: 0;
+}
+
+.main-list-p {
+  margin-right: 30px;
+}
+
+.text-decoration-none,
+.text-decoration-none-Features-Section {
+  list-style-type: none;
+}
+
+.text-decoration-none-Features-Section {
+  margin-right: 30px;
+}
+
+.main-h3,
+.main-h4 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main-h3 {
+  margin-top: 94px;
+}
+
+.main-h4 {
+  margin-top: 188px;
+  padding-top: 186px;
+}
+
+.container .What-We-Do-Section,
+.Team-Section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.Team-Section {
+  margin-bottom: 94px;
+}
+
+.buttonAll,
+.buttonWeb,
+.buttonApps,
+.buttonDesign,
+.buttonMarket {
+  padding: 8px 20px;
+  background-color: var(--color-button-white);
+  display: inline-block;
+  border-radius: 3px;
+  color: var(--color-text-black);
+  text-decoration: none;
+  margin: 95px 0 34px 8px;
+}
+
+.buttonAll:hover,
+.buttonWeb:hover,
+.buttonApps:hover,
+.buttonDesign:hover,
+.buttonMarket:hover {
+  background-color: var(--primary-text-color);
+  color: var(--secondary-color);
+}
+
+.list-h1 {
+  color: var(--secondary-color);
+  font-size: 44px;
+}
+
+.main-list-h2 {
+  font-size: 14px;
+}
+
+.design {
+  justify-content: center;
+  background-color: var(--color-background-team);
+  padding: 0 15px;
+  text-align: center;
+}
+
+.list-h4,
+.style-list-p4 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.list-h4 {
+  margin-top: 30px;
+}
+
+.style-list-p4 {
+  padding-bottom: 94px;
+}
+
+.main-list-img:hover,
+.clien-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.hero-img-clien {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0 30px 94px 0;
+}
+
+.regular-customer {
+  text-align: center;
+  font-size: 36px;
+  margin: 94px 0 50px;
+}

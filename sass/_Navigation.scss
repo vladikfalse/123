@@ -1,0 +1,67 @@
+.nav-current-studia,
+.nav-current-portfolio,
+.nav-contact-current {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.nav-current-studia::before,
+.nav-current-portfolio::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: var(--primary-text-color);
+  margin-top: 5px;
+  position: absolute;
+  bottom: -85%;
+}
+
+.nav-current-studia::before {
+  width: 13%;
+}
+
+.nav-current-portfolio::before {
+  width: 22%;
+}
+
+.nav-current-studia:hover,
+.nav-current-portfolio:hover,
+.nav-current-portfolio:focus,
+.nav-contact-current:focus {
+  color: var(--primary-text-color);
+}
+
+.nav-portfolio,
+.nav-contact,
+.nav-studia-portfolio,
+.nav-contact-portfolio,
+.nav-portfolio-portfolio,
+.nav-studia-contact {
+  color: var(--color-text-black);
+  text-decoration: none;
+}
+
+.nav-portfolio:hover,
+.nav-studia-portfolio:hover,
+.nav-contact:hover,
+.nav-contact-portfolio:hover,
+.nav-contact-portfolio:focus {
+  color: var(--primary-text-color);
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  margin-left: 93px;
+  position: relative;
+  font-size: 14px;
+}
+
+.nav-list .iteam {
+  display: block;
+  margin-right: 50px;
+}
+
+.nav-list .iteam:last-child {
+  margin-right: 0;
+}

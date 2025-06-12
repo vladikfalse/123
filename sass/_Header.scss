@@ -9,12 +9,12 @@
 
 .logo-text-primary {
   color: var(--color-text-black);
-
-  &:hover {
-    color: var(--primary-text-color);
-  }
 }
 
 .logo-blue {
+  color: var(--primary-text-color);
+}
+
+.logo-text-primary:hover {
   color: var(--primary-text-color);
 }

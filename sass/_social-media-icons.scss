@@ -1,0 +1,65 @@
+.img-instagram,
+.img-twitter,
+.img-facebook,
+.img-li {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.img-li {
+  margin-right: 0;
+}
+
+.img-instagram::after {
+  background-image: url('/docs/Photo/Ellipse\ 1.svg');
+}
+
+.img-twitter::after {
+  background-image: url('/docs/Photo/Ellipse2.png');
+}
+
+.img-facebook::after {
+  background-image: url('/docs/Photo/Ellipse3.svg');
+}
+
+.img-li::after {
+  background-image: url('/docs/Photo/Ellipse.svg');
+}
+
+.img-instagram::before,
+.img-twitter::before,
+.img-facebook::before,
+.img-li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.img-instagram::after,
+.img-twitter::after,
+.img-facebook::after,
+.img-li::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.img-instagram:hover::before,
+.img-twitter:hover::before,
+.img-facebook:hover::before,
+.img-li:hover::before {
+  background-color: rgba(33, 150, 243, 1);
+}
