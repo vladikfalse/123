@@ -936,19 +936,34 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 700px;
   }
   .hero-img-clien li {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(50% - 10px);
-            flex: 0 0 calc(50% - 10px);
-    margin-bottom: 10px;
+        -ms-flex: 0 0 calc(50% - 15px);
+            flex: 0 0 calc(50% - 15px); /* половина ширины минус половина gap */
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .hero-img-clien li img {
     max-width: 100%;
     height: auto;
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */
