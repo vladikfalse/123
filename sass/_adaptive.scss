@@ -112,7 +112,34 @@ text-align: center; /* Центруємо текст */
 
   .fonts-img img {
     width: 100%;
-     /* ограничение по ширине */
+   
+    height: auto;
+  }
+}
+
+
+@media screen and (max-width: 480px){
+.regular-customer{
+ font-size: 28px;
+text-align: center;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .hero-img-clien {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .hero-img-clien li {
+    flex: 0 0 calc(50% - 10px);
+    margin-bottom: 10px;
+  }
+
+  .hero-img-clien li img {
+    max-width: 100%;
     height: auto;
   }
 }
