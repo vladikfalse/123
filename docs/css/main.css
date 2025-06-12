@@ -455,7 +455,7 @@ body {
 }
 
 .img-twitter::after {
-  background-image: url("Photo/Ellipse2.png");
+  background-image: url("/Vladislav/Photo/Ellipse2.png");
 }
 
 .img-facebook::after {
