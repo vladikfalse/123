@@ -18,3 +18,12 @@
 .logo-text-primary:hover {
   color: var(--primary-text-color);
 }
+
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
