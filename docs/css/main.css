@@ -451,19 +451,19 @@ body {
 }
 
 .img-instagram::after {
-  background-image: url("/Vladislav/Photo/Ellipse\ 1.svg");
+  background-image: url("/docs/Photo/Ellipse 1.svg");
 }
 
 .img-twitter::after {
-  background-image: url("/Vladislav/Photo/Ellipse2.png");
+  background-image: url("/docs/Photo/Ellipse2.png");
 }
 
 .img-facebook::after {
-  background-image: url("Photo/Ellipse3.svg");
+  background-image: url("/docs/Photo/Ellipse3.svg");
 }
 
 .img-li::after {
-  background-image: url("Photo/Ellipse.svg");
+  background-image: url("/docs/Photo/Ellipse.svg");
 }
 
 .img-instagram::before,
@@ -998,5 +998,18 @@ textarea {
   .footer-section {
     margin-top: 60px;
     padding-bottom: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container .main-nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-h4 {
+    padding: 0;
   }
 }/*# sourceMappingURL=main.css.map */
